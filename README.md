@@ -9,3 +9,11 @@ Invoke-RestMethod -Uri "https://transfer.sh/important.txt" -Method Put -InFile $
 
 Start-Process notepad.exe "$env:TEMP\url.txt"
 
+
+
+
+$response = Invoke-RestMethod -Uri "https://file.io" -Method Post -InFile $path -ContentType "multipart/form-data"
+
+$response.link | Out-File "$env:TEMP\url.txt"
+
+Start-Process notepad.exe "$env:TEMP\url.txt"
