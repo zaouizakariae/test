@@ -42,4 +42,5 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+python3 vol.py -f ch2.raw windows.registry.printkey --key "HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName"
 
