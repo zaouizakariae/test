@@ -17,3 +17,16 @@ $response = Invoke-RestMethod -Uri "https://file.io" -Method Post -InFile $path 
 $response.link | Out-File "$env:TEMP\url.txt"
 
 Start-Process notepad.exe "$env:TEMP\url.txt"
+
+
+
+_______
+volqtility
+
+git clone https://github.com/volatilityfoundation/volatility3.git
+cd volatility3
+
+pip3 install -r requirements.txt
+
+python3 vol.py -h
+
