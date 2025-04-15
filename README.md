@@ -30,3 +30,16 @@ pip3 install -r requirements.txt
 
 python3 vol.py -h
 
+
+8888888888888
+
+
+sudo apt install python3-venv
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+
